@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字提取与翻译工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文字提取与翻译工具</h1>
+        
+        <section id="input-section">
+            <h2>输入</h2>
+            <input type="text" id="linkInput" placeholder="粘贴链接">
+            <input type="file" id="fileInput" accept="video/*,audio/*">
+            <button id="extractBtn">提取文字</button>
+        </section>
+
+        <section id="output-section">
+            <h2>提取的文字</h2>
+            <textarea id="extractedText" readonly></textarea>
+        </section>
+
+        <section id="translation-section">
+            <h2>翻译</h2>
+            <button id="translateChineseBtn">翻译成中文</button>
+            <button id="translateEnglishBtn">翻译成英文</button>
+            <textarea id="translatedText" readonly></textarea>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
